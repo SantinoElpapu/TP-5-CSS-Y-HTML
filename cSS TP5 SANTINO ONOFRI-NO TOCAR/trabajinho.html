@@ -1,0 +1,93 @@
+<!DOCTYPE html> 
+<html lang="es"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Mi Portafolio</title> 
+    <link rel="stylesheet" href="style.css">
+</head> 
+<body> 
+    <header> 
+      <div class="Logocet"><img src="logo-removebg-preview.png" alt="cet30" width="100" height="100"></>
+        <h1>Mi Portafolio</h1> 
+        <nav> 
+            <a href="#sobre-mi">Sobre mí</a> 
+            <a href="#logros">Logros</a> 
+            <a href="#objetivos">Objetivos</a> 
+            <a href="#contacto">Contacto</a> 
+        </nav> 
+        <hr>
+    </header> 
+  
+    <main> 
+        <section id="sobre-mi"> 
+            <h2>Sobre mí</h2> 
+            <p>¡Hola! Soy estudiante de la escuela CET 30, y soy del curso 4°4, turno mañana</p> 
+            <p>En esta página recopilo mis primeros proyectos. Uno de ellos es esta pagina web que comento y realizo muchas cosas.
+            </p> 
+        </section> 
+  
+        <section id="objetivos">
+            <h2>Mis Objetivos</h2> 
+            <article id="Miarticulo"> <strong>Mi objetivo escolar es consolidarme como estudiante con un titulo importante.</strong></article> 
+            <article id="Miarticulo2"><strong> El segundo, consta en mejorar en muchos aspectos.</strong> </article> 
+            <article id="Miarticulo3"> <strong>Ser alguien capaz de formarme y progresar correctamente.</strong></article> 
+        </section>
+
+        </section>
+           <h2>Habilidades</h2> 
+           <ul> 
+              <li>HTML semántico</li> 
+                 <li>Estructura de sitios web</li> 
+                 <li>CSS básico</li> 
+                 <li>Git y GitHub</li> 
+                </ul> 
+          </section> 
+            <section id="contacto"> ... </section> 
+            </main> 
+          <footer> 
+            <div class="Imagen2">
+              <img src="logo.png" alt="2 logo" width="100" height="100">
+            </div>
+          <p>&copy; 2026 — Santino Onofri· CET N.°30</p> 
+         </footer>
+         <!--esto lo hice yo aparte por que lo aprendi xd-->
+         <script>
+            const articulo=document.getElementById("Miarticulo")
+             const articulo2=document.getElementById("Miarticulo2")
+              const articulo3=document.getElementById("Miarticulo3")
+        
+              function agrandar(){
+                articulo.style.transform="scale(1.1)"
+                articulo.style.transition="transform(0.4s)"
+              }
+              function achicar(){
+                articulo.style.transform="scale(1)"
+              }
+             articulo.addEventListener("mouseenter",agrandar);
+             articulo.addEventListener("mouseleave",achicar);
+
+        
+              function agrandar1(){
+                articulo2.style.transform="scale(1.1)"
+                articulo2.style.transition="transform(0.4s)"
+              }
+              function achicar1(){
+                articulo2.style.transform="scale(1)"
+              }
+             articulo2.addEventListener("mouseenter",agrandar1);
+             articulo2.addEventListener("mouseleave",achicar1);
+
+        
+              function agrandar2(){
+                articulo3.style.transform="scale(1.1)"
+                articulo3.style.transition="transform(0.4s)"
+              }
+              function achicar2(){
+                articulo3.style.transform="scale(1)"
+              }
+             articulo3.addEventListener("mouseenter",agrandar2);
+             articulo3.addEventListener("mouseleave",achicar2);
+         </script>
+   </body> 
+</html> 

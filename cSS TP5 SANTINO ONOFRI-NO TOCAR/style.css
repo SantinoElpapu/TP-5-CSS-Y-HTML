@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+
+:root{
+    --fuente: 'Poppins', sans-serif;
+    --color-texto:   #E0E0E0;
+    --color-footer: #000000;
+    --color-primario:#6b7ca0;
+    --color-fondo: #1A1A2E ;
+    --color-claro:#991616;
+    --color-li:#bc3005;
+}
+
+
+body { 
+font-family: var(--fuente); 
+color: var(--color-texto); 
+background-color: var(--color-fondo); 
+font-size: 16px; 
+line-height: 1.6; 
+text-align: center;
+}
+
+h1{
+    font-size: 2rem;
+    color: var(--color-primario);
+    margin-bottom:10px;
+}
+h2{
+    font-size: 1.5rem;
+    color: var(--color-primario);
+    margin-bottom: 10px;
+}
+h3{
+    font-size: 1.2rem;
+    color: var(--color-texto);
+    margin-bottom: 8px;
+}
+
+header{
+    background-color: var(--color-fondo);
+    color: white;
+    padding: 34px;
+}
+header h1{
+    text-shadow: 10px 10px 5px black;
+    color: white;
+    border-bottom: 2px solid white;
+}
+nav a { 
+    text-shadow: 10px 10px 5px black;
+    color: var(--color-claro); 
+    margin: 0 12px; 
+    font-weight: bold; 
+    padding: 4px 8px; 
+    transition: 0.3s;
+    list-style-position: inside;
+}
+nav:hover{
+    border-bottom: 2px solid white; 
+    box-shadow:2px 2px 3px solid cyan ;;
+}
+main{
+    text-shadow: 10px 10px 5px black;
+    max-width: 800px;
+    margin:0 auto ;
+    padding: 24px 32px;
+}
+section{
+    margin-bottom: 40px;
+}
+article{
+    padding: 16px 20px; 
+    margin-bottom: 16px;
+    box-shadow:2px 2px 3px solid cyan ;
+    transition: 0.3s;
+}
+article:hover{
+    border: 2px solid var(--color-primario);
+    border-radius: 8px;
+    margin-bottom: 10px;
+    background-color: #000000;
+}
+footer{
+    background-color: var(--color-footer);
+    color: white;
+    padding:20px;
+    text-align: center;
+    font-size: 0.875rem;
+}
+ul,li{
+    box-shadow: 2px 2px solid rgba(0,0,0,0.1);
+    text-shadow: 10px 10px 5px black;
+    list-style-type: none;
+    padding: 8px 0; 
+    border-bottom: 1px solid var(--color-claro)
+}
+li::before{
+ content: "𒈝";
+ color: var(--color-li);
+ position: absolute;
+ left: 600px;
+
+}
+.Imagen2{
+  padding: 20px;
+  margin: 20px;
+  background-color: var(--color-fondo);
+  transition: 0.3s;
+}
+.Imagen2:hover{
+    transform: rotateX(360deg);
+    transition: 1s;
+}
+
