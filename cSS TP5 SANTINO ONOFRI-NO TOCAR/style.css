@@ -10,6 +10,7 @@
     --color-nav-a:cyan;
     --color-claro:#991616;
     --color-li:#bc3005;
+    --color--texto:#dd9104;
 }
 
 
@@ -119,5 +120,9 @@ li::before{
 .Imagen2:hover{
     transform: rotateX(360deg);
     transition: 1s;
+}
+p::selection{
+  background-color: var(--color--texto);
+  color: #ffffff;
 }
 
