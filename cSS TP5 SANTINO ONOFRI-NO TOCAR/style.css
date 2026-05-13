@@ -57,8 +57,15 @@ nav a {
     list-style-position: inside;
 }
 nav:hover{
-    border-bottom: 2px solid white; 
-    box-shadow:2px 2px 3px solid cyan ;;
+     border: 2px solid var(--color-nav-a);
+    box-shadow: 5px 5px 4px black;
+    transform: translateY(-2px);
+}
+nav:active{
+    transform: scale(0.95); 
+  background: var(--color-nav-a);
+  color: white; 
+  box-shadow: 0 3px 6px black;
 }
 main{
     text-shadow: 10px 10px 5px black;
